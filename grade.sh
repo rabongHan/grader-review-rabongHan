@@ -9,9 +9,7 @@ if [[! -e ListExamples.java]]; then
     exit 1
 fi
 
-cp TestListExamples.java student-submission/
-
-cd student-submission/
+cp student-submission/*.java .
 
 javac -cp $CPATH *.java
 if [ $? -ne 0 ]; then
